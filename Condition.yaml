@@ -23,7 +23,7 @@
   - name: create user roboshop
     become: yes # we need sudo access for this task only
     ansible.builtin.user:
-      name: {{UserID}}
+      name: "{{UserID}}"
     when: out.rc != 0 #if this expression is true then only this module will run
 
 # assignment: take username as variable, and then dynamically check user exists or not then create
