@@ -1,7 +1,7 @@
 - name: This is the variables from files
   hosts: localhost
   vars_files:
-  - Variable.yaml
+  - "C:\Users\Vasudevan P\Shell_Scripts\Ansible\Variable.yaml"
   tasks:
   - name: This is reading variables from files
     ansible.builtin.debug:
