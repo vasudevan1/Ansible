@@ -10,7 +10,7 @@
     # when you want to run linux commands directly i.e in the case ansible module not available
     # when the user does not exists, ansible treating this failure and comeout by default
     # ignore_errors: true
-    ansible.builtin.command: id {{UserID}}
+    ansible.builtin.command: id $UserID
     register: out #output is variable name
     ignore_errors: true
 
