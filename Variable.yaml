@@ -6,5 +6,5 @@
     OCCUPATION: System Engineer
   tasks:
   - name: Print variables
-    ansible.buildin.debug:
+    ansible.builtin.debug:
       msg: "Hello my name is {{NAME}} and occupation is {{OCCUPATION}}"
