@@ -1,17 +1,17 @@
-# - name: This is the variables from files
-#   hosts: localhost
-#   vars_files:
-#   - Variable.yaml
-#   tasks:
-#   - name: This is reading variables from files
-#     ansible.builtin.debug:
-#       msg: "My name is {{NAME}}, occupation is {{OCCUPATION}}"
-
-- name: variables from files
-  hosts: localhost #managing the ansible server itself
+- name: This is the variables from files
+  hosts: localhost
   vars_files:
-  - Variable.yaml
+  - variables.yaml
   tasks:
-  - name: printing variables
+  - name: This is reading variables from files
     ansible.builtin.debug:
-      msg: "We are learning {{NAME}}, Duration is: {{OCCUPATION}}, Trainer is: {{OCCUPATION}}"
+      msg: "My name is {{NAME}}, occupation is {{OCCUPATION}}"
+
+# - name: variables from files
+#   hosts: localhost #managing the ansible server itself
+#   vars_files:
+#   - Variables.yaml
+#   tasks:
+#   - name: printing variables
+#     ansible.builtin.debug:
+#       msg: "We are learning {{NAME}}, Duration is: {{OCCUPATION}}, Trainer is: {{OCCUPATION}}"
