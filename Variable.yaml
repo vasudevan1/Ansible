@@ -2,8 +2,8 @@
 - name: This is the variable file
   hosts: localhost
   vars:
-  NAME: Vasudevan Pasupuleti
-  OCCUPATION: System Engineer
+    NAME: Vasudevan Pasupuleti
+    OCCUPATION: System Engineer
   tasks:
   - name: Print variables
     ansible.buildin.debug:
