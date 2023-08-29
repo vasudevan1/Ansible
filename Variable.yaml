@@ -1,0 +1,10 @@
+#This file is created to practise the variables in Ansible
+- name: This is the variable file
+  hosts: localhost
+  vars:
+  Name: Vasudevan Pasupuleti
+  Occupation: System Engineer
+  tasks:
+  - name: Print variables
+    ansible.buildin.debug:
+      msg: "Hello my name is {{Name}} and occupation is {{Occupation}}"
